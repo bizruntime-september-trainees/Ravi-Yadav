@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drag and Drop</title>
+</head>
+<body>
+    <script>
+        // Define the Drag Image
+        function dragstart_handler(ev) {
+            let img = new Image();
+            img.src = "C:\Users\konika bhattacharya\Desktop\Lord.jpg";
+            ev.dataTransfer.setDragImage(img, 10, 10);
+        }
+    </script>
+</body>
+</html>

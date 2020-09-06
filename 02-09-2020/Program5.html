@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Template Tag </title>
+    <style>
+        body{
+            background-color: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <h2> Example of Template Tag </h2>
+    <button onclick="clickMe()"> ClickMe </button> <br>
+    <template id=" MyTemplate">
+        <img src="C:\Users\konika bhattacharya\Pictures\Lord\download.jpg" alt="Nice_Pic" height="200" width="200" />
+        <script>
+            alert("Thankyou for choosing Template.Click On Ok For Image")
+        </script>
+    </template>
+    <script>
+        function ClickMe() {
+            var x = document.getElemntsByTagName("template")[0];
+            var clon = x.content.clonNode(true);
+            document.child.appendChild(clon);
+
+        }
+    </script>
+
+</body>
+</html>

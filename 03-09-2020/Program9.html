@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drag and Drop</title>
+</head>
+<body>
+    <script>
+        // Identyfy What Draggable?
+        // Making an element Draggable, Need: 1.draggable Attributes 2. ondragstart Global Event Handler.
+        function dragstart_handler(ev) {
+         // Add Target Element's id to the data transfer Object.
+            ev.dataTranfer.setData("text/plain", ev.target.id);
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            // Get The elemnt by id
+            const element = document.getElementById("p1");
+            // add ondragstart event listener
+            element.addEventListener("dragstart", dragstart_handler);
+
+        });
+        <p id="p1" draggable="true"> This element is draggable </p>
+    </script>
+</body>
+</html>
+
+
+
+
+
+

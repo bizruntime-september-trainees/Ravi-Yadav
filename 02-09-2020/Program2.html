@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+</head>
+<body>
+    <table >
+        <caption> Avengers Team </caption>
+        <tr>
+        <th> S.N0. </th>
+        <th> FirstName </th>
+        <th> LastName </th> 
+        <th colspan="2"> CompanyName </th>
+        </tr>
+        <tr> 
+        <td> 1 </td>
+        <td> Captain </td>
+        <td> America </td> 
+        <td> Avengers</td>
+        <td> Shield </td>
+        </tr>
+        <tr>
+        <td> 2 </td>
+        <td> Iron </td>
+        <td> Man </td> 
+        <td> Avengers </td>
+        </tr>
+        <tr> 
+        <td> 3 </td>
+        <td> Bruce </td>
+        <td> Banner </td>
+        <td> Avengers</td>
+        </tr>
+    </table>
+    <style>
+        table{
+            width:100%;
+        }
+        table,th,td {
+            border : 2px solid red;
+            border-collapse : collapse;
+
+        }
+        th,td{
+            padding : 10px;
+        }
+        table#alter tr:nth-child(even)
+        {
+            background-color : #eee;
+        }
+        table#alter tr:nth-child(odd)
+        {
+            background-color: #fff;
+        }
+        table#alter th{
+            color : white;
+            background-color:grey;
+        }
+    </style>
+</body>
+</html>

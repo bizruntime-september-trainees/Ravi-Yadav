@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Drag and Drop </title>
+</head>
+<body>
+    <script>
+        // 1. making an element draggable :
+        // 2. What to drag?
+        // 3. Where to Drop?
+        // 4. do the drop
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+        function drag(ev) {
+            ev.dataTransfer.setData("text/html", ev.target.id);
+
+        }
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text/html");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+    <p> Dragging an Image </p>
+    <div id="div1" height="200px" width="200px" ondrop="drop(event)" ondragover="allowDrop(even)"> </div>
+    <img  id="drag1" src="C:\Users\konika bhattacharya\Desktop\Lord.jpg" draggable="true" ondragstart="drag(event)"/>
+</body>
+</html>
