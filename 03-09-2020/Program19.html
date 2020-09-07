@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JSON </title>
+</head>
+<body>
+    <script>
+        // To sending JavaScript Object to server with the help og JSON
+
+        var myObj = '{"name" : "Ravi", "age" : "23", "city" : "Lucknow"}';
+        var myJSON = JSON.stringify(myObj);
+        window.location = "demo_json.php?x=" + myJSON;
+    </script>
+</body>
+</html>
