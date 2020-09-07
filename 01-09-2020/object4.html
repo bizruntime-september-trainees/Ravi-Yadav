@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        // define method in object
+
+        function emp(id, name, salary) {
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+
+            this.changeSalary = changeSalary;
+            function changeSalary(otherSalary) {
+                this.salary = otherSalary;
+            }
+        }
+        e1 = new emp(100, "Vijay", 50000);
+        document.write(e1.id + " " + e1.name + " " + e1.salary);
+        e1.changeSalary(45000);
+        document.write("<br>" + e1.id + " " + e1.name + " " + e1.salary);
+    </script>
+</body>
+</html>
