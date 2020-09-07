@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exception Handling</title>
+    </head>
+    <body>
+        <script>
+            try{
+                var a =["10", "20", "30", "40", "50"]; //a is an array
+                document.writeln(a + "<br>"); // It will show the element of Array a.
+                document.writeln(b); // b is not declared but still it will try to fetch its value.
+                // thats why catch block is invoked
+            }
+            catch (e){
+                document.writeln("There is error which shows" + " " + e.message); // Exception hanled
+
+            }
+            
+            </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Exception Handling</title>
+
+    </head>
+    <body>
+        <script>
+            try{
+                var a = 2;
+                if(a ==2)
+                document.writeln("ok");
+            }
+            catch(e)
+            {
+                document.writeln(e.message);
+            }
+            finally{
+                document.writeln("<br>" + " Finally block is excuted all time exception is Handled or not")
+            }
+        </script>
+    </body>
+
+</html>
