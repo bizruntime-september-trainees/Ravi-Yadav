@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Abstraction </title>
+</head>
+<body>
+    <script>
+        // we can not create an instance of abstract class.
+
+        function Vehicle() {
+            this.vehicleName = name;
+            throw new Error("We can not create instance of abstract class");
+        }
+        Vehicle.prototype.display = function () {
+            return this.vehicleName;
+        }
+        var vehicle = new Vehicle();
+    </script>
+</body>
+</html>

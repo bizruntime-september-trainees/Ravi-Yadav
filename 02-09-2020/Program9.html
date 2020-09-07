@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Encapsulation Validate </title>
+</head> 
+<body>
+    
+    <script>
+        // Encapsulation Validate
+        class Student {
+            constructor() {
+                var name;
+                var marks;
+            }
+            getName() {
+                return this.name;
+            }
+            setName(name) {
+                this.name = name;
+            }
+            getMarks() {
+                return this.marks;
+            }
+            setMarks(marks) {
+                if (marks < 0 || marks > 100) {
+                    alert("Invalid Marks data");
+                }
+                else
+                {
+                    this.marks = marks;
+                }
+            }
+        }
+        var student1 = new Student();
+        student1.setName("Raju");
+        student1.setMarks(95);
+        document.writeln(student1.getName() + " " + student1.getMarks() + " <br> ");
+    </script>
+</body>
+</html>

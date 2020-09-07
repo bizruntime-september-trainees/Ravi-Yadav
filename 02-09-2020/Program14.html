@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> PolyMorPhism </title>
+</head>
+<body>
+
+    <script>
+        // Lets see an Example where child class and parent class contains the same method.and object of child class invokes both classes Method.
+
+        class A {
+            display() {
+                document.writeln("Method of class A is invoked" + " <br> ");
+            }
+        }
+        class B extends A {
+            display() {
+                document.writeln("Method of class B is invoked");
+            }
+        }
+        var b = [new A(), new B()]
+        b.forEach(function (msg) {
+            msg.display();
+        });
+
+
+    </script>
+</body>
+</html>

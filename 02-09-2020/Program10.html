@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Prototype </title>
+</head>
+<body>
+    <script>
+        // Encapsulation as a prototype
+
+        function Student(name, marks) {
+            var s_name = name;
+            var s_marks = marks;
+        
+        Object.defineProperty(this, "name", {
+            get: function () {
+                return s_name;
+            },
+            set: function (s_name) {
+                this.s_name = s_name;
+            }
+        });
+        Object.defineProperty(this, "Marks", {
+            get: function() {
+                return s_marks;
+            },
+            set: function (s_marks) {
+                this.s_marks = s_marks;
+            }
+        });
+        }
+        var student1 = new Student("Raju" , 80);
+        document.writeln(student1.name + " " + student1.marks + " <br> ");
+    </script>
+</body>
+</html>

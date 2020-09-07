@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Inheritance </title>
+</head>
+<body>
+    
+    <script>
+
+        // Inheritance when a class extends a custom class
+
+        class Bike
+        {
+            constructor()
+            {
+                this.company = "Honda";
+            }
+        }
+        class Bike2 extends Bike {
+            constructor(name, price) {
+                super();
+                this.name = name;
+                this.price = price;
+            }
+        }
+        var b2 = new Bike2("Shine", 95000);
+        document.writeln(b2.company + " " + b2.name + " " + b2.price);
+    </script>
+</body>
+</html>

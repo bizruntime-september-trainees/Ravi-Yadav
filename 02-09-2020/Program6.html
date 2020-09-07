@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> static methods </title>
+</head>
+<body>
+    
+    <script>
+        // calling static method inside the constructor
+        class Test {
+            constructor() {
+                document.writeln(Test.display() + " <br> ");
+                document.writeln(this.constructor.display());
+            }
+            static display() {
+                return "static method is invoked"
+            }
+        }
+        var t = new Test();
+    </script>
+</body>
+</html>

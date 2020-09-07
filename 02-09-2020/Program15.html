@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Polymorphism</title>
+</head>
+<body>
+    <script>
+        // Prototype
+        function A() {
+            
+        }
+        A.prototype.display = function()
+            {
+            return "A is invoked";
+        }
+        function B() {
+
+        }
+        B.prototype = Object.create(A.prototype);
+        var b = [new A(), new B()]
+        b.forEach(function (msg) {
+           document.writeln(msg.display() + "<br>");
+        });
+    </script>
+</body>
+</html>
