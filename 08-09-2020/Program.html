@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> WebSocket </title>
+    </head>
+    <body>
+        <p> <i>WebSocket is great for real time application.</i> </p>
+        <p> It allows two ways,event and driven communication between Web Browser and Webserver.</p>
+        <script>
+            const ws = new WebSocket("ws://localhost:8082");
+            ws.addEventListener("open", ()=> {
+                console.log("We are connected");
+                console.log("Hey,How's it going ! ")
+            });
+            ws.addEventListener("message", ({data}) => {
+                console.log(data);
+
+            });
+        </script>
+    </body>
+</html>
