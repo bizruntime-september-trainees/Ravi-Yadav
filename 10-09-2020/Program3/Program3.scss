@@ -1,0 +1,12 @@
+$primary-color : blue; // here we create a variable primary-color;
+
+h1{
+    color:$primary-color;
+}
+h3{
+    color:lightblue;
+}
+p{
+    color:$primary-color;
+}
+
