@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empty() Method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+
+    <div style="height:150px;background-color:yellow"> 
+        <ol>
+            <li>Hello India</li>
+            <li>Hello Dude !</li>
+            <li>See you later.</li>
+        </ol>
+    </div>
+    <button>ClickMe</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").empty();
+            });
+        })
+    </script>
+    
+</body>
+</html>

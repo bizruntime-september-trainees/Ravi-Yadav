@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> JQuery Events </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("h1,h2,h3").click(function () {
+                $(this).hide();
+            });
+            $("p").click(function () {
+                alert("This paragraph was clicked.");
+            });
+            $("h4").bind("click", function () {
+                alert("This heading was clicked.");
+            });
+            $("input").blur(function () {
+                alert("This text box has lost its focus.");
+            });
+            $("select").change(function () {
+                document.getElementById("loc").innerHTML = "You selected: " + document.getElementById("se").value;
+            });
+            $("input").keydown(function () {
+                $("input").css("background-color", "green");
+            });
+            $("input").keyup(function () {
+                $("input").css("background-color", "violet");
+            });
+        });  
+    </script>
+</head>
+
+<body>
+    <h1>Hello World !</h1>
+    <h2>Hello India !</h2>
+    <h3>Hello Bangalore</h3>
+    <h4>Hello BTM ! </h4>
+    <p>Click on the statement.</p>
+    Enter Something : <input id="text" />
+
+    <select id="se" name="actors">
+        <option>Uthappa</option>
+        <option selected="selected">Kattapa</option>
+        <option>Veerappa</option>
+        <option>Bahubali</option>
+        <option>Bhallal Dev</option>
+        <option>Awantika</option>
+    </select>
+    <div id="loc"></div>
+    <br>
+    Write something: <input type="text1">
+
+
+</body>
+
+</html>
