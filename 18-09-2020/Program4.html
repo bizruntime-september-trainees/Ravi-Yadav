@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.JS</title>
+</head>
+
+<body>
+    <h2>Changing Properties : </h2>
+
+    <div>
+        <img id="pic" src="Lord.jpg" width="100px" height="100px" >
+    </div>
+    <div id="text" style="color: gold;">
+        Yada yada hi dharmasya glaanirbhavati bhaarat
+        Abhyutthaanam adharmasya tadaatmaanam srijaamyaham <br>
+        Paritranaay saadhunaam vinaashaay cha dushkritaam
+        Dharm sansthaapanaarthaay sambhavaami yuge yuge !
+
+
+    </div>
+    
+    <button onclick="change('Lord.jpg')">Lord</button> <br> <br>
+    <button onclick="change('sudarshan.jpeg')">Sudarshan</button> <br> <br>
+    <button onclick="change2()">ChangeColor</button>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.js"></script>
+
+<script>
+    function change(p) {
+        d3.select("#pic")
+            .attr("src", p);
+
+    }
+    function change2(){
+      let COLOR = d3.select("#text").style("color");
+      if(COLOR == "gold")
+      {
+          d3.select("#text").style("color", "blue");
+      }
+      else{
+          d3.select("#text").style("color", "gold");
+      }
+
+    }
+    
+</script>
+
+
+</html>

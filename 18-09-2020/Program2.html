@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.JS</title>
+</head>
+
+<body>
+    <h2>Changing Content by D3.JS </h2>
+
+    <p id="id1">This is First Paragraph : Hello World ! </p>
+    <p id="id2">This is 2nd Paragraph : Hello India ! </p>
+    <br>
+    <br>
+
+    <button onclick="change1()">Change1stParaContent</button> <br> <br>
+    <button onclick="change2()">Change2ndParaContent</button> <br> <br>
+    <button onclick="change3()">ChangAllParaContentUsingHtml</button> <br> <br>
+    <button onclick="change4()">ChangAllParaContentUsingText</button>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.js"></script>
+
+<script>
+
+    function change1() {
+        let p1 = d3.select("#id1")
+        p1.text("First Paragraph Updated.");
+        console.log(p1.node());
+    }
+    function change2() {
+        let p2 = d3.select("#id2").text("2ndParagraph is updated.");
+        console.log(p2.node());
+    }
+    function change3() {
+        let allPara = d3.selectAll("p");
+        allPara.html("<b><i> All Paragraphs are updated </i></b>");
+        console.log(allPara.nodes());
+    }
+    function change4() {
+        let allPara2 = d3.selectAll("p");
+        allPara2.text("<b><i> All Paragraphs are updated </i></b>");
+        console.log(allPara2.nodes());
+    }
+
+</script>
+
+</html>

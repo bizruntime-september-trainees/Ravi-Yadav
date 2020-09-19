@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.JS</title>
+</head>
+
+<body>
+    <h2>Adding And Removing Items content from List:</h2>
+    <ol id="ol1">
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+    </ol>
+    <br> <br>
+
+    <button onclick="change1()">Add Item</button> <br> <br>
+    <button onclick="change2()">RemoveAllItems</button> <br> <br>
+    <button onclick="change3()">RemoveLastItem</button> 
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.js"></script>
+
+<script>
+
+    let itemlist = d3.select("#ol1");
+    function count() {
+        return itemlist.selectAll("li").size();
+
+        return itemlist.size()
+    }
+    function change1() {
+        let c = count() + 1;
+        let it1 = itemlist.append("li").text("Item" + c);
+        console.log(it1.node());
+    }
+    function change2() {
+        itemlist.selectAll("li").remove();
+
+    }
+    function change3() {
+        itemlist.select("li:last-child").remove();
+
+    }
+
+</script>
+
+</html>
