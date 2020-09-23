@@ -1,0 +1,16 @@
+<div *ngFor="let item of items">
+    <p>
+        {{item.name}}
+        {{item.value}}
+    </p>
+
+</div>
+<div class='row' [ngSwitch]="selectedValue">
+    <div *ngSwitchCase="'One'">One is Pressed</div>
+    <div *ngSwitchCase="'Two'">Two is Selected</div>
+    <div *ngSwitchDefault>Default Option</div>
+</div>
+
+<h3>Two Way DataBinding</h3>
+<input [(ngModel)]= "FullName"> <br> <br>
+<p> {{FullName}} </p>
