@@ -1,0 +1,17 @@
+<h2><i> FORM-1 </i></h2> <br> <br>
+<div class="container">
+  <div class="form-group">
+    <label for=""> Email : </label>
+    <input type="text" [formControl]="email">
+  </div> 
+  <div class="" form-group>
+    <button (click)="updateEmail()" class="btn btn-dark">UPDATE</button>
+  </div>  <br>
+  <p>
+    Value : {{email.value}}
+  </p> <br>
+</div>
+
+<br> <br>
+<app-employee-list></app-employee-list>
+<app-employee-details></app-employee-details>
