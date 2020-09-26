@@ -45,6 +45,7 @@ import { ProcessHttpmsgProvider } from '../providers/process-httpmsg/process-htt
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: 'BaseURL', useValue: baseURL },
     DishProvider,
     LeaderProvider,
     PromotionProvider,

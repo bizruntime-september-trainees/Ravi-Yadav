@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { HttpClientModule } from '@angular/common/http';
-import { HttpClient } from '@angular/common/http';
+import { Http, Response } from '@angular/http';
 import 'rxjs/add/observable/throw';
 
 /*
@@ -12,20 +11,20 @@ import 'rxjs/add/observable/throw';
 @Injectable()
 export class ProcessHttpmsgProvider {
 
-  constructor(public http: HttpClient) {
+  constructor(public http: Http) {
     console.log('Hello ProcessHttpmsgProvider Provider');
   }
 
   public extractData(res: Response) {
     let body = res.json();
-    return body || {};
+    return body || { };
   }
 
-  public handleError(error: Response | any) {
+  public handleError (error: Response | any) {
     // In a real world app, you might use a remote logging infrastructure
     let errMsg: string;
-    const body = error.json() || '';
     if (error instanceof Response) {
+      const body = error.json() || '';
       const err = body.error || JSON.stringify(body);
       errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
     } else {

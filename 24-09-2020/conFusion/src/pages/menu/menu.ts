@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DishDetailPage } from ''
 
 /**
  * Generated class for the MenuPage page.
@@ -20,6 +21,11 @@ export class MenuPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuPage');
+  }
+  dishSelected(event, dish){
+    this.navCtrl.push(DishDetailPage, {
+      dish : dish
+    } );
   }
 
 }
