@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { User } from './user';
+
+
+
 
 @Component({
   selector: 'app-root',
@@ -8,4 +12,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'TDF-1';
   topics = ["Angular", "IONIC", "JAVA", "AI"];
+  
+  userModel = new User("Tony", "tony@gmail.com", 1234567890, " ", "Morning", true);
 }
