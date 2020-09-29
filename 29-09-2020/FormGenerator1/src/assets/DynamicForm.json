@@ -1,0 +1,44 @@
+[
+    {
+        "Id": "FirstName",
+        "Label": "FirstName",
+        "Type": "input",
+        "Value": ""
+    },
+    {
+        "Id": "LastName",
+        "Label": "LastName",
+        "Type": "input",
+        "Value": ""
+    },
+    {
+        "Id": "DOB",
+        "Label": "DOB",
+        "Type": "date",
+        "Value": ""
+    },
+    {
+        "Id": "Email",
+        "Label": "Email",
+        "Type": "input",
+        "Value": ""
+    },
+    {
+        "Id": "Mob",
+        "Label": "Mob",
+        "Type": "input",
+        "Value": ""
+    },
+    {
+        "Id": "Gender",
+        "Label": "Gender",
+        "Type": "radio",
+        "Value": "male/female"
+    },
+    {
+        "Id": "City",
+        "Label": "City",
+        "Type": "input",
+        "Value": ""
+    }
+]
