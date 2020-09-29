@@ -55,7 +55,7 @@ interface ExampleFlatNode {
 export class AppComponent {
   private _transformer = (node: FoodNode, level: number) => {
     return {
-      expandable: !!node.children && node.children.length > 0,
+      expandable: node.children && node.children.length > 0,
       name: node.name,
       level: level,
     };
