@@ -1,0 +1,12 @@
+<div>
+    <h1> <i> Angular State </i></h1>
+</div>
+<div class="left">
+    <label>Set Topic Name </label>
+    <input type="text" placeholder="name" #name>
+    <label> Set Topic Link </label>
+    <input type="text" placeholder="url" #url>
+
+    <button (click)="addTutorial(name.value,url.value)" class="btn btn-primary">Add a Tutorial</button>
+    
+</div>
