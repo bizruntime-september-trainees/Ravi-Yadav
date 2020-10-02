@@ -1,0 +1,57 @@
+[
+    {
+        "ID":"FirstName" ,
+        "Label":"First Name",
+        "Type":"input",
+        "Value":"",
+        "Required" : true
+    },{
+        "ID":"LastName" ,
+        "Label":"Last Name",
+        "Type":"input",
+        "Value":"",
+        "Required" : true
+    },{
+        "ID":"DOB" ,
+        "Label":"DOB",
+        "Type":"date",
+        "Value":"",
+        "Required" : true
+    },{
+        "ID":"Gender" ,
+        "Label":"Gender",
+        "Type":"radio",
+        "Value":"male, female",
+        "Required" : true
+    },{
+        "ID":"Mobile" ,
+        "Label":"Mob No",
+        "Type":"input",
+        "Value":"",
+        "Required" : true
+    },{
+        "ID":"EmailId" ,
+        "Label":"Email ID",
+        "Type":"input",
+        "Value":"",
+        "Required" : true
+    },{
+        "ID":"Address" ,
+        "Label":"Address",
+        "Type":"input",
+        "Value":"",
+        "Required" : true
+    },{
+        "ID":"City" ,
+        "Label":"City",
+        "Type":"select",
+        "Value":"Mathura,Lucknow,Banaras,Mumbai,Pune,Delhi",
+        "Required" : true
+    },{
+        "ID":"PinCode" ,
+        "Label":"Pin Code",
+        "Type":"input",
+        "Value":"",
+        "Required" : true
+    }
+]

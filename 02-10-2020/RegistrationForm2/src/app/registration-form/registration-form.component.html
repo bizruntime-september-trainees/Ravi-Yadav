@@ -1,0 +1,88 @@
+<div class="header-color">
+    <h1> Registration Form </h1>
+</div>
+
+
+<section>
+    <div class="col-md-12">
+        
+    </div>
+    <form [formGroup]="registrationForm" id="form" [formGroup]="registrationForm">
+        <div class="row form">
+
+
+            <div class="col-md-12" *ngFor="let control of dynamicFormArray">
+
+                <div [ngSwitch]="control.Type">
+
+                    <div *ngSwitchCase="'input'">
+
+                        <div class="col-md-4">
+                            <label>
+                                {{control.Label}}
+                            </label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="text" [formControlName]="control.ID" class="form-control">
+                        </div>
+
+                    </div>
+
+                    <div *ngSwitchCase="'date'">
+
+                        <div class="col-md-4">
+                            <label>
+                                {{control.Label}}
+                            </label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="date" [formControlName]="control.ID" class="form-control">
+                        </div>
+
+                    </div>
+
+                    <div *ngSwitchCase="'radio'">
+                        <div class="col-md-4">
+                            <label>
+                                {{control.Label}}
+                            </label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="radio" *ngFor="let val of control.Value.split(',')">
+                                <input type="radio"  [formControlName]="control.ID" name="{{control.ID}}" value="{{val}}">
+                                {{val}}
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div *ngSwitchCase="'select'">
+
+                        <div class="col-md-4">
+                            <label>
+                                {{control.Label}}
+                            </label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <select  [formControlName]="control.ID" class="form-control">
+                                <option value="-1"> Select </option>
+                                <option *ngFor="let val of control.Value.split(',')" value="{{val}}"> {{val}} </option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </form> <br>
+    <button type="submit" class="btn btn-primary"> Submit Form </button>
+  
+</section>
