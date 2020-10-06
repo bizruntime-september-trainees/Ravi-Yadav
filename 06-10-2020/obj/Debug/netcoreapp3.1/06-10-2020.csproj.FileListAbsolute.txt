@@ -1,0 +1,13 @@
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/bin/Debug/netcoreapp3.1/06-10-2020
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/bin/Debug/netcoreapp3.1/06-10-2020.deps.json
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/bin/Debug/netcoreapp3.1/06-10-2020.runtimeconfig.json
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/bin/Debug/netcoreapp3.1/06-10-2020.runtimeconfig.dev.json
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/bin/Debug/netcoreapp3.1/06-10-2020.dll
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/bin/Debug/netcoreapp3.1/06-10-2020.pdb
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/obj/Debug/netcoreapp3.1/06-10-2020.csprojAssemblyReference.cache
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/obj/Debug/netcoreapp3.1/06-10-2020.AssemblyInfoInputs.cache
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/obj/Debug/netcoreapp3.1/06-10-2020.AssemblyInfo.cs
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/obj/Debug/netcoreapp3.1/06-10-2020.csproj.CoreCompileInputs.cache
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/obj/Debug/netcoreapp3.1/06-10-2020.dll
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/obj/Debug/netcoreapp3.1/06-10-2020.pdb
+/home/ravi/BackEnd/Ravi-Yadav/06-10-2020/obj/Debug/netcoreapp3.1/06-10-2020.genruntimeconfig.cache
