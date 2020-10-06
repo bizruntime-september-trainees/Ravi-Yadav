@@ -1,0 +1,13 @@
+/home/ravi/BackEnd/BasicC#/Program1/bin/Debug/netcoreapp3.1/Program1
+/home/ravi/BackEnd/BasicC#/Program1/bin/Debug/netcoreapp3.1/Program1.deps.json
+/home/ravi/BackEnd/BasicC#/Program1/bin/Debug/netcoreapp3.1/Program1.runtimeconfig.json
+/home/ravi/BackEnd/BasicC#/Program1/bin/Debug/netcoreapp3.1/Program1.runtimeconfig.dev.json
+/home/ravi/BackEnd/BasicC#/Program1/bin/Debug/netcoreapp3.1/Program1.dll
+/home/ravi/BackEnd/BasicC#/Program1/bin/Debug/netcoreapp3.1/Program1.pdb
+/home/ravi/BackEnd/BasicC#/Program1/obj/Debug/netcoreapp3.1/Program1.csprojAssemblyReference.cache
+/home/ravi/BackEnd/BasicC#/Program1/obj/Debug/netcoreapp3.1/Program1.AssemblyInfoInputs.cache
+/home/ravi/BackEnd/BasicC#/Program1/obj/Debug/netcoreapp3.1/Program1.AssemblyInfo.cs
+/home/ravi/BackEnd/BasicC#/Program1/obj/Debug/netcoreapp3.1/Program1.csproj.CoreCompileInputs.cache
+/home/ravi/BackEnd/BasicC#/Program1/obj/Debug/netcoreapp3.1/Program1.dll
+/home/ravi/BackEnd/BasicC#/Program1/obj/Debug/netcoreapp3.1/Program1.pdb
+/home/ravi/BackEnd/BasicC#/Program1/obj/Debug/netcoreapp3.1/Program1.genruntimeconfig.cache
